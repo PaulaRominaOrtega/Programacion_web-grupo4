@@ -3,7 +3,6 @@ import RecetaTipoCocina from '../models/RecetaTipoCocina.js';
 
 const router = express.Router();
 
-// Obtener todas las relaciones receta-tipo de cocina
 router.get('/', async (req, res) => {
     try {
         const recetasTipoCocina = await RecetaTipoCocina.findAll();
